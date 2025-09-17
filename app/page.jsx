@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { Card } from 'components/card';
 import { ContextAlert } from 'components/context-alert';
 import { Markdown } from 'components/markdown';
-import { RandomQuote } from 'components/random-quote';
 import { getNetlifyContext } from 'utils';
 
 const contextExplainer = `
@@ -38,7 +37,6 @@ export default function Page() {
             )}
             <section className="flex flex-col gap-4">
                 <Markdown content={preDynamicContentExplainer} />
-                <RandomQuote />
                 <Markdown content={postDynamicContentExplainer} />
             </section>
         </div>
